@@ -1,0 +1,380 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+/*CSS FOR HEADER/ NAV BAR STARTS FROM HERE*/
+#navbar li, a, button{
+    font-size: 17px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #002147;
+    border: none;
+    margin: 0px;
+    border: none;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+.nav_links li{
+        display: inline-block;
+        list-style: none;
+        padding: 0 10px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    color: #dedede;
+    text-decoration: none;
+   
+}
+.nav_links li a:hover{
+    transition: all 0.3s ease 0s;
+    color: #9d9da1;
+   font-size: 18px;
+    
+}
+button{
+    transition: all 0.3s ease 0s;
+    padding: 6px 13px;
+    border: none;
+    border-radius: 7px;
+}
+button:hover{
+    transition: all 0.3s ease 0s;
+    padding: 7px 15px;
+    cursor: pointer;
+    background-color: #274a90;
+    color: #fff;
+}
+/*CSS FOR HEADER/NAV BAR ENDS HERE*/
+
+/*CSS FOR IMAGE SLIDER STARTS*/
+.imageSlideshow{
+    margin: 0px;
+    padding-bottom: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002147;
+}
+.sliders{
+    width: 100%;
+    overflow: hidden;
+}
+.slides{
+    width: 500% ;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+/*CSS FOR MANUAL SLIDE NAVIGATION*/
+
+.navigation-manual{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -45px;
+}
+.manual_button{
+    border: 2px solid #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 6s;
+    margin: 0 14px;
+}
+.manual_button:hover{
+    background-color: #ffffff;
+    transition: 0.4s;
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+/*CSS FOR AUTOMATIC NAVIGATION*/
+
+.navigation-auto{
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+.navigation-auto div{
+    border: 2px solid #002147;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+/*CSS FOR IMAGE SLIDER ENDS*/
+
+/*CSS FOR NEWS STARTS*/
+.AktuNews{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 900;
+    padding: 0;
+    margin: 100px 0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+    }
+.newsheadings h1{
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 2px solid #000; 
+        line-height: 0.1em;
+        margin: 10px 0 0 0;   
+        padding-top: 43px;
+}
+.newsheadings h1 line{
+    background:#fff; 
+         padding:0 10px; 
+}
+.newscontainer{
+    display: flex;
+    position: relative;
+    flex-wrap:wrap;
+}
+ .news{
+    position: relative;
+    width: 275px;
+    height: 275px;
+    overflow: hidden;
+    transition: 0.4s;
+    padding: 0 10px
+}
+.news:hover{
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.newsimages{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.newsimages:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.4s;
+}
+.newsimages img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 10px;
+    transition: 0.4s ease;
+}
+.newstext{
+   position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+}
+.newstext p{
+    color: rgb(0, 0, 0);
+    padding-bottom: 3px;
+    font-size: 18px !important;
+    transition: 0.4s;
+    font-size: 14px;
+    transform: translateY(300px);
+}
+.news:hover p{
+    transform: translateY(0px);
+}
+.buttonhover{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.buttonhover a{
+ color: rgb(0, 0, 0);
+text-decoration: none;
+}
+.buttonhover a:hover{
+ color: rgb(255, 255, 255);
+font-size: 19px;
+}
+#morenews:hover{
+    cursor: pointer;
+    padding: 11px 25px;
+}
+/*CSS FOR NEWS ENDS*/
+/*JOIN US AT JSS STARTS*/
+.parallax{
+    background: url("https://www.wallpapertip.com/wmimgs/49-493218_student-class-discussion-data-instant-image-real-college.jpg" );
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 560px;
+}
+.joinus{
+    text-align: center;
+}
+.findus {
+    justify-content: center;
+    text-align: center;
+}
+.findus button{
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px 27px;
+    color: white;
+}
+.findus button:hover{
+    text-decoration: underline;
+    color: #000000;
+    font-size: 18px;
+    background-color: rgba(235, 235, 235, 0.684);
+    padding-right: 32px;
+}
+.findingnemo{
+    text-align: center;
+    padding-left: 8px;
+}
+
+/*JOIN US AT JSS ENDS*/
+
+
+
+
+
+/*Footer starts*/
+footer{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 95%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 60px 0;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 20px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #dedede;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #dedede;
+    padding-left: 10px;
+    transition: all 0.3s ease;
+}
+/*Social Media Icons Starts*/
+.peko{
+    background: linear-gradient( #fff 0%, #d7e1ec 74%);
+}
+.social-media .socialbutton{
+    display: inline;
+    height: 50px;
+    width: 50px;
+float: left;
+margin: 0 5px;
+border-radius: 50px;
+background: rgba(235, 235, 235, 0.884);
+cursor:pointer;
+text-align: center;
+justify-content: center;
+overflow: hidden;
+}
+.socialicon{
+    display: inline;
+height: 50px;
+width: 50px;
+border-radius: 50px;
+box-sizing: border-box;
+line-height: 60px;
+}
+.socialicon i{
+    font-size: 25px;
+    line-height: 50px;
+}
+.socialbutton span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+    margin-left: 10px;  
+    transition: all 0.4s ease-in;
+}
+.socialbutton:hover{
+    width: 130px;
+    transition: all 0.4s ease-in;
+}
+.socialbutton a{
+    text-decoration: none;
+}
+/*Social Media Icons Ends*/
+/*Footer ends*/

@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar li, a, button{
+    font-size: 17px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #002147;
+    border: none;
+    margin: 0px;
+    border: none;
+    padding: 10px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    font-family: 'Mulish', sans-serif;
+}
+.notnavbar{
+    margin: 150px 0 50px 0;
+    padding: 0 5%;
+}
+.nav_links li{
+        display: inline-block;
+        list-style: none;
+        padding: 0 10px;
+}
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+    color: #dedede;
+    text-decoration: none;
+   
+}
+.nav_links li a:hover{
+    transition: all 0.3s ease 0s;
+    color: #9d9da1;
+   font-size: 18px;
+    
+}
+button{
+    transition: all 0.3s ease 0s;
+    padding: 6px 13px;
+    border: none;
+    border-radius: 7px;
+}
+button:hover{
+    transition: all 0.3s ease 0s;
+    padding: 7px 15px;
+    cursor: pointer;
+    background-color: #274a90;
+    color: #fff;
+}
+.map{
+    text-align: center;
+    padding-top: 40px;
+}
+.mapheading, .vision{
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 2px solid #000; 
+    line-height: 0.2em;
+    margin: 10px 0 0 0;   
+    padding-top: 70px;
+    font-family: 'Roboto', sans-serif;
+}
+.mapheading line, .vision line{
+    background:#fff; 
+    padding:0 10px;
+}
+.heading1 h1{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.institude p{
+    padding-bottom: 0 8px 10px 0;
+    font-size:17px;
+}
+.institude img{
+    float: left;
+    padding: 15px;
+}
+.v img{
+    float: left;
+    padding: 15px;
+}
+.vision p{
+    padding-top: 18px;
+}
+.v h2{
+    padding: 30px;
+    font-size: 32px;
+}
+.v p{
+    padding: 100px 0;
+}
+.mapheading{
+    margin-top: 170px;
+}
+.v{
+    padding: 20px 0 30px 0;
+    font-family: 'Roboto', sans-serif;
+}
+.m h2{
+    padding: 30px;
+    font-size: 32px;
+}
+.m img{
+    float: left;
+    padding: 15px;
+}
+.m{
+    font-family: 'Roboto', sans-serif;
+}
+.m p{
+    padding-top: 20px;
+}
